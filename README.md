@@ -1,2 +1,2 @@
-# project-website-template
+# personal-website
 Personal website: https://yapingzhao.github.io/
