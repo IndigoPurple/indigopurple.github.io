@@ -1,2 +1,2 @@
 # personal-website
-Personal website: https://yapingzhao.github.io/
+Personal website: https://indigopurple.github.io/
