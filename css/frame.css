@@ -356,6 +356,10 @@ hr {
   max-width: 90px;
 }
 
+.max-width-50 {
+  max-width: 70px;
+}
+
 .max-height-200 {
   max-height: 200px;
 }
