@@ -1,0 +1,664 @@
+<!DOCTYPE HTML>
+<!--
+	Landed by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?e3b46ca7acd66c6855abed975a02083f";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+		
+
+<head>
+	<title>DSAA 2026 Special Session on Computational Imaging, Vision, and Language (CIVIL)</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/dsaa2022.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+	<style>
+		:root {
+			--ink: #2d2342;
+			--muted: #64577d;
+			--accent: #7b2ff7;
+			--accent-soft: rgba(123, 47, 247, 0.08);
+			--accent-border: rgba(123, 47, 247, 0.14);
+			--warm: #ff7a59;
+			--surface: rgba(255, 255, 255, 0.92);
+			--surface-strong: #ffffff;
+			--shadow: 0 24px 70px rgba(44, 34, 84, 0.12);
+		}
+
+		body {
+			background:
+				radial-gradient(circle at top, rgba(128, 0, 255, 0.18), transparent 34%),
+				linear-gradient(180deg, #f7f0ff 0%, #ffffff 28%, #f6fbff 100%);
+			color: var(--ink);
+		}
+
+		#header {
+			background: linear-gradient(135deg, rgba(55, 16, 102, 0.96), rgba(128, 0, 255, 0.88));
+			box-shadow: 0 14px 40px rgba(59, 21, 109, 0.22);
+		}
+
+		#header #logo a,
+		#header #nav a {
+			letter-spacing: 0.04em;
+			font-weight: 700;
+		}
+
+		#header #nav a:hover {
+			color: #ffe2d8 !important;
+		}
+
+		.box.alt {
+			margin-bottom: 0;
+			position: relative;
+		}
+
+		.box.alt .image.fit img {
+			max-height: 35rem;
+			object-fit: cover;
+			filter: saturate(1.05) contrast(1.03) brightness(0.88);
+		}
+
+		.box.alt::after {
+			content: "";
+			position: absolute;
+			inset: 0;
+			background: linear-gradient(180deg, rgba(35, 18, 64, 0.18), rgba(35, 18, 64, 0.55));
+			pointer-events: none;
+		}
+
+		.wrapper.style1 {
+			background: transparent;
+		}
+
+		#main .container {
+			background: var(--surface);
+			border: 1px solid var(--accent-border);
+			border-radius: 28px;
+			box-shadow: var(--shadow);
+			padding: 3.75rem 3.25rem;
+			backdrop-filter: blur(10px);
+			margin: -5.5rem auto 4rem;
+			position: relative;
+			z-index: 2;
+			max-width: 84rem;
+		}
+
+		.major {
+			padding: 0.5rem 0 1.25rem;
+		}
+
+		.major h2 {
+			color: #47206f;
+			font-size: 2.35rem;
+			line-height: 1.15;
+			margin-bottom: 0.9rem;
+			max-width: none;
+			margin-left: auto;
+			margin-right: auto;
+			white-space: nowrap;
+		}
+
+		.major p {
+			color: var(--muted);
+			font-size: 1.1rem;
+			max-width: 48rem;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		h3, h4, h5 {
+			letter-spacing: 0.02em;
+		}
+
+		p, li, ul {
+			color: #3f3358;
+		}
+
+		section header h3,
+		section header h4,
+		section header h5 {
+			margin-bottom: 0.35rem;
+		}
+
+		section {
+			position: relative;
+			padding: 1.3rem 0 0.85rem;
+		}
+
+		section::before {
+			content: "";
+			position: absolute;
+			left: -1rem;
+			top: 0.8rem;
+			bottom: 0.8rem;
+			width: 4px;
+			border-radius: 999px;
+			background: linear-gradient(180deg, var(--accent), var(--warm));
+			opacity: 0.18;
+		}
+
+		hr {
+			border-bottom-color: rgba(128, 0, 255, 0.12);
+			margin: 3rem 0 2rem;
+		}
+
+		a {
+			color: #6a2bba;
+			transition: color 0.2s ease;
+		}
+
+		a:hover {
+			color: #ff6f61;
+		}
+
+		.intro-text {
+			color: var(--muted);
+			font-size: 1.02rem;
+			margin-bottom: 1.35rem;
+		}
+
+		.simple-list {
+			list-style: none;
+			padding-left: 0;
+			margin: 1rem 0 0;
+		}
+
+		.simple-list li {
+			position: relative;
+			padding-left: 1.2rem;
+			margin-bottom: 0.65rem;
+		}
+
+		.simple-list li::before {
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 0.72rem;
+			width: 0.45rem;
+			height: 0.45rem;
+			border-radius: 50%;
+			background: linear-gradient(180deg, var(--accent), var(--warm));
+		}
+
+		.topic-grid {
+			display: grid;
+			grid-template-columns: repeat(3, minmax(0, 1fr));
+			gap: 1.25rem;
+			margin-top: 1.6rem;
+		}
+
+		.topic-card {
+			background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(247, 242, 255, 0.95));
+			border: 1px solid var(--accent-border);
+			border-radius: 22px;
+			padding: 1.35rem 1.25rem 1.2rem;
+			box-shadow: 0 14px 34px rgba(68, 43, 116, 0.08);
+			height: 100%;
+		}
+
+		.topic-card h5 {
+			color: #4d1b87;
+			font-size: 1.05rem;
+			margin-bottom: 0.9rem;
+		}
+
+		.topic-card ul {
+			list-style: none;
+			padding-left: 0;
+			margin: 0;
+		}
+
+		.topic-card li {
+			position: relative;
+			padding-left: 1rem;
+			margin-bottom: 0.58rem;
+			line-height: 1.5;
+		}
+
+		.topic-card li::before {
+			content: "•";
+			position: absolute;
+			left: 0;
+			top: 0;
+			color: var(--accent);
+			font-weight: 700;
+		}
+
+		.policy-block {
+			display: grid;
+			gap: 1rem;
+			margin-top: 1.25rem;
+		}
+
+		.policy-callout {
+			background: linear-gradient(180deg, rgba(123, 47, 247, 0.08), rgba(255, 122, 89, 0.06));
+			border: 1px solid rgba(123, 47, 247, 0.12);
+			border-radius: 20px;
+			padding: 1.25rem 1.35rem;
+		}
+
+		.policy-callout p {
+			margin: 0;
+			line-height: 1.7;
+		}
+
+		.policy-grid {
+			display: grid;
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+			gap: 1rem;
+		}
+
+		.policy-card {
+			background: var(--surface-strong);
+			border: 1px solid rgba(123, 47, 247, 0.1);
+			border-radius: 20px;
+			padding: 1.15rem 1.2rem;
+			box-shadow: 0 10px 24px rgba(68, 43, 116, 0.06);
+		}
+
+		.policy-card h5 {
+			color: #4d1b87;
+			font-size: 0.98rem;
+			margin-bottom: 0.5rem;
+		}
+
+		.policy-card p {
+			margin: 0;
+			line-height: 1.7;
+			color: var(--ink);
+		}
+
+		.policy-process {
+			background: linear-gradient(180deg, rgba(241, 247, 255, 0.95), rgba(255, 255, 255, 0.98));
+			border: 1px solid rgba(74, 121, 231, 0.14);
+			border-radius: 22px;
+			padding: 1.3rem 1.4rem;
+		}
+
+		.policy-process h5 {
+			color: #244b8d;
+			margin-bottom: 0.65rem;
+		}
+
+		.policy-process p {
+			line-height: 1.7;
+			margin-bottom: 1rem;
+		}
+
+		.policy-process ul {
+			list-style: none;
+			padding-left: 0;
+			margin: 0;
+		}
+
+		.policy-process li {
+			position: relative;
+			padding-left: 1.35rem;
+			margin-bottom: 0.75rem;
+			line-height: 1.55;
+		}
+
+		.policy-process li::before {
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 0.65rem;
+			width: 0.5rem;
+			height: 0.5rem;
+			border-radius: 50%;
+			background: #4a79e7;
+		}
+
+		.committee-list,
+		.organizer-list {
+			background: rgba(255, 255, 255, 0.74);
+			border: 1px solid rgba(123, 47, 247, 0.08);
+			border-radius: 18px;
+			padding: 1rem 1.15rem;
+		}
+
+		.organizer-note {
+			margin-top: 0.35rem;
+			color: var(--muted);
+		}
+
+		@media screen and (max-width: 1280px) {
+			#main .container {
+				margin-top: -4.5rem;
+			}
+		}
+
+		@media screen and (max-width: 980px) {
+			#main .container {
+				padding: 2.4rem 1.5rem;
+				border-radius: 22px;
+				margin-top: -2rem;
+			}
+
+			.major h2 {
+				font-size: 2rem;
+				white-space: normal;
+			}
+
+			section::before {
+				left: -0.4rem;
+			}
+
+			.topic-grid,
+			.policy-grid {
+				grid-template-columns: repeat(2, minmax(0, 1fr));
+			}
+		}
+
+		@media screen and (max-width: 736px) {
+			.topic-grid,
+			.policy-grid {
+				grid-template-columns: 1fr;
+			}
+
+			#main .container {
+				padding: 2rem 1.1rem;
+			}
+
+			.major {
+				padding-bottom: 0.8rem;
+			}
+
+			.major h2 {
+				font-size: 1.55rem;
+				line-height: 1.2;
+			}
+
+			.major p {
+				font-size: 1rem;
+			}
+
+			.policy-callout,
+			.policy-card,
+			.policy-process,
+			.topic-card {
+				border-radius: 18px;
+			}
+		}
+	</style>
+</head>
+
+
+<body class="is-preload">
+	<div id="page-wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<font color="#FFFFFF">
+				<h1 id="logo"><a href="dsaa2026.html"><font color="#FFFFFF">CIVIL @ DSAA 2026</font></a></h1>
+			<nav id="nav">
+				<ul>
+<!--					<li><a href="dsaa2026.html#ks">Keynote Speaker</a></li>-->
+<!--					<li><a href="dsaa2026.html#ap">Accepted Papers</a></li>-->
+					<li><a href="dsaa2026.html#cfp">Call for Papers</a></li>
+					<li><a href="dsaa2026.html#sub">Submission</a></li>
+					<!-- <li><a href="dsaa2026.html#ip">Important Policies</a></li> -->
+					<li><a href="dsaa2026.html#oc">Organizing Committee</a></li>
+<!--					<li><a href="dsaa2026.html#news">News</a></li>-->
+				</ul>
+			</nav>
+			</font>
+		</header>
+
+		<div class="box alt" align="center">
+						<!--Row 1 of highlighted papers-->
+						<div class="row gtr-50 gtr-uniform">
+
+							<div class="col-12"><span class="image fit"><img src="images/dsaa2026/sandiego.jpeg" alt="" /></span>
+					</div>
+						</div>
+		</div>
+
+		<!-- Main -->
+		<div id="main" class="wrapper style1">
+			<div class="container">
+				<header class="major">
+					<h2>Computational Imaging, Vision, and Language (CIVIL)</h2>
+					<p>The 11th IEEE International Conference on Data Science and Advanced Analytics (DSAA 2026)<br>
+						New Delhi, India: October 6th-9th, 2026</p>
+				</header>
+
+				<!-- Contact -->
+				<section id="cfp">
+					<header align="center">
+						<h3><font color="#8000ff">Call for Papers</font></h3>
+					</header>
+
+					<header>
+						<h4><font color="#8000ff">Important Dates</font></h4>
+					</header>
+
+
+					<ul>
+						<li>Paper Submission Deadline: May 30, 2026 </li>
+						<li>Paper Notification: August 10, 2026</li>
+						<li>Camera-ready Submission: August 30, 2026</li>
+						<font color="#808080">Time zone: <a target="_blank" href="https://www.timeanddate.com/time/zones/aoe">Anywhere on Earth (AoE)</a></font>
+					</ul>
+
+
+					<header>
+						<h4><font color="#8000ff">Proceedings and Indexing</font></h4>
+					</header>
+					<p>All accepted Special Session Proposals will be published by IEEE in the DSAA main conference proceedings under its Special Session scheme and submitted for inclusion in the IEEE Xplore Digital Library.</p>
+
+					<header>
+						<h4><font color="#8000ff">Topics of Interest</font></h4>
+					</header>
+
+					<p class="intro-text">The general aim of this special session is to address visual and textual tasks emerging from a computational perspective, by overcoming challenges in the computing domain and building artifacts that usefully process vision and language.</p>
+
+					<p class="intro-text">Topics of interest include but are not limited to:</p>
+
+					<ul class="simple-list">
+						<li>Visual Tasks</li>
+						<li>Textual Tasks</li>
+						<li>Vision-Language Tasks</li>
+					</ul>
+
+					<div class="topic-grid">
+						<article class="topic-card">
+							<h5>Visual Tasks</h5>
+							<ul>
+								<li>Computational Photography</li>
+								<li>Image &amp; Video Sensing, Representation, Modeling, and Registration</li>
+								<li>Image &amp; Video Motion Estimation, Registration, and Fusion</li>
+								<li>Image &amp; Video Synthesis, Rendering, and Visualization</li>
+								<li>Image &amp; Video Restoration and Enhancement</li>
+								<li>Image &amp; Video Interpretation and Understanding</li>
+								<li>Image &amp; Video Compression, Coding, and Transmission</li>
+								<li>Visual Detection, Recognition, Retrieval, and Classification</li>
+								<li>Color, Multi-spectral, and Hyper-spectral Imaging</li>
+								<li>Image &amp; Video Biometrics, Forensics, and Security</li>
+								<li>Stereoscopic, Multi-view, and 3D Processing</li>
+								<li>Biomedical and Biological Image Processing</li>
+								<li>Image &amp; Video Quality Models</li>
+							</ul>
+						</article>
+
+						<article class="topic-card">
+							<h5>Textual Tasks</h5>
+							<ul>
+								<li>Computational Social Science and Cultural Analytics</li>
+								<li>Dialogue and Interactive Systems</li>
+								<li>Discourse and Pragmatics</li>
+								<li>Information Extraction</li>
+								<li>Information Retrieval and Text Mining</li>
+								<li>Linguistic Theories, Cognitive Modeling, and Psycholinguistics</li>
+								<li>Machine Translation and Multilinguality</li>
+								<li>Phonology, Morphology, and Word Segmentation</li>
+								<li>Question Answering</li>
+								<li>Resources and Evaluation</li>
+								<li>Sentence-level Semantics, Textual Inference, and Other Areas</li>
+								<li>Sentiment Analysis, Stylistic Analysis, and Argument Mining</li>
+								<li>Speech and Multimodality</li>
+								<li>Summarization</li>
+							</ul>
+						</article>
+
+						<article class="topic-card">
+							<h5>Vision-Language Tasks</h5>
+							<ul>
+								<li>Image-Sentence Retrieval</li>
+								<li>Phrase Grounding</li>
+								<li>Text-to-Clip</li>
+								<li>Image Captioning</li>
+								<li>Object Sketching</li>
+								<li>Video-text Retrieval</li>
+								<li>Visual Question Answering</li>
+							</ul>
+						</article>
+					</div>
+					<hr />
+				</section>
+
+				<!-- HKU-PS -->
+				<section id="sub">
+					<header align="center">
+						<h3><font color="#8000ff">Submission</font></h3>
+					</header>
+
+					<header>
+						<h4><font color="#8000ff">Submission instructions</font></h4>
+					</header>
+					<ul>
+						<li>TBA</li>
+					</ul>
+
+					<header>
+						<h4><font color="#8000ff">Important Policies</font></h4>
+					</header>
+					<div class="policy-block">
+						<div class="policy-callout">
+							<p><strong>Paper Length &amp; Formatting.</strong> The length of each paper submitted to the Research tracks should be no more than seven (7) pages of technical content plus additional pages solely for references and should be formatted following the standard 2-column U.S. letter style of the IEEE Conference template. For further information and instructions, see the IEEE Proceedings Author Guidelines.</p>
+						</div>
+
+						<div class="policy-grid">
+							<article class="policy-card">
+								<h5>Reproducibility &amp; Supplementary</h5>
+								<p>The advancement of data science and analytics depends heavily on reproducibility. We strongly recommend that the authors release their code and data to the public. Authors can provide an optional two (2) page supplement at the end of their submitted paper (it needs to be in the same PDF file after the paper's references). This supplement can only be used to include (i) information necessary for reproducing the experimental results reported in the paper (e.g., various algorithmic and model parameters and configurations, hyper-parameter search spaces, details related to dataset filtering and train/test splits, software versions, detailed hardware configuration, etc.), and (ii) any data, pseudo-code and proofs that due to space limitations, could not be included in the main manuscript.</p>
+							</article>
+
+							<article class="policy-card">
+								<h5>Authorship</h5>
+								<p>The list of authors at the time of submission is final and cannot be changed.</p>
+							</article>
+
+							<article class="policy-card">
+								<h5>Dual Submissions</h5>
+								<p>DSAA is an archival publication venue; submissions that have been previously published, accepted, or are currently under-review at peer-review publication venues (i.e., journals, conferences, workshops with published proceedings, etc.) are not permitted. DSAA has a strict no dual submission policy.</p>
+							</article>
+
+							<article class="policy-card">
+								<h5>Conflicts of Interest (COI)</h5>
+								<p>COIs must be declared at the time of submission in the submission system. COIs include employment at the same institution at the time of submission or in the past three years, collaborations during the past three years, advisor/advisee relationships, plus family and close friends. Program chairs are not allowed to submit any papers. Track chairs and special session chairs and other function chairs are not allowed to make submissions to their own tracks.</p>
+							</article>
+
+							<article class="policy-card">
+								<h5>Attendance</h5>
+								<p>At least one author of each accepted paper must register in full and attend the conference to present the paper. No-show papers will be removed from the IEEE Xplore proceedings.</p>
+							</article>
+
+							<article class="policy-card">
+								<h5>AI-Generated Text</h5>
+								<p>The use of artificial intelligence (AI) generated text in an article shall be disclosed in the acknowledgements section of any paper submitted to an IEEE Conference or Periodical. The sections of the paper that use AI-generated text shall have a citation to the AI system used to generate the text.</p>
+							</article>
+						</div>
+
+						<div class="policy-process">
+							<h5>Special Session Review Process</h5>
+							<p>Reviewing the submissions in each special session is coordinated by the organizers, but fully aligned to the main conference review process: All papers will be double-blind reviewed. Author names and affiliations must not appear in the submissions, and bibliographic references must be adjusted to preserve author anonymity. Submissions failing to comply with formatting or anonymity will be rejected without review. Because of the double-blind review process, non-anonymous papers that have been issued as technical reports or similar cannot be considered for DSAA'2026. An exception applies to arXiv papers that were published in arXiv at least one month prior to the DSAA'2026 submission deadline, provided that the submitted paper's title and abstract differ from the arXiv version.</p>
+							<ul>
+								<li>Organizers select program committee (PC) members.</li>
+								<li>PC members may serve across multiple sessions.</li>
+								<li>Papers are assigned to PC members for review.</li>
+								<li>Organizers recommend acceptance/rejection, validated by Special Session Chairs.</li>
+								<li>Final decisions are made by DSAA Program Chairs.</li>
+							</ul>
+						</div>
+					</div>
+
+					<hr />
+				</section >
+
+			
+
+				<!-- HKU-PS -->
+				<section id="oc">
+					<header align="center">
+						<h3><font color="#8000ff">Organizing Committee<br>(Alphabetical Order)</font></h3>
+					</header>
+
+					<header>
+						<h4><font color="#8000ff">Special Session Chairs</font></h4>
+					</header>
+					<ul class="committee-list">
+						<li>Carson K. Leung, University of Manitoba, Canada</li>
+						<li>Kamal Karlapalem, IIIT Hyderabad, India</li>
+						<li>Defu Lian, University of Science and Technology of China, China</li>
+					</ul>
+
+					<header>
+						<h4><font color="#8000ff">Organizer</font></h4>
+					</header>
+					<div class="organizer-list">
+						<ul>
+							<li><a target="_blank" href="https://indigopurple.github.io/">Yaping Zhao</a>, The University of Hong Kong</li>
+						</ul>
+						<p class="organizer-note">Inquiries about this special session should be sent to: <strong><a
+							href="mailto:zhaoyp@connect.hku.hk">zhaoyp (at) connect.hku.hk</a></strong></p>
+					</div>
+
+
+
+			</div>
+		</div>
+
+<!--		&lt;!&ndash; Footer &ndash;&gt;-->
+<!--		<footer id="footer">-->
+<!--			<ul class="icons">-->
+<!--				<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>-->
+<!--				<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>-->
+<!--				<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>-->
+<!--				<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>-->
+<!--				<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>-->
+<!--			</ul>-->
+<!--			<ul class="copyright">-->
+<!--				<li>&copy; Untitled. All rights reserved.</li>-->
+<!--				<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>-->
+<!--			</ul>-->
+<!--		</footer>-->
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
